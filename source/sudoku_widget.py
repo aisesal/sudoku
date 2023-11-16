@@ -1,7 +1,8 @@
-from itertools import product
 import tkinter as tk
+from itertools import product
 
 from sudoku_state import SudokuState
+
 
 class SudokuWidget(tk.Frame):
     _MARGIN = 10
@@ -153,4 +154,3 @@ class SudokuWidget(tk.Frame):
             self._canvas.create_text(
                 self._WIDGET_SIZE//2, self._WIDGET_SIZE//2,
                 text='Victory', fill='yellow', font=self._VICTORY_FONT)
-        
